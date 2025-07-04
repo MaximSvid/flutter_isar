@@ -22,9 +22,9 @@ const NoteSchema = CollectionSchema(
       name: r'count',
       type: IsarType.long,
     ),
-    r'createdAt': PropertySchema(
+    r'created_at': PropertySchema(
       id: 1,
-      name: r'createdAt',
+      name: r'created_at',
       type: IsarType.dateTime,
     ),
     r'description': PropertySchema(
@@ -279,7 +279,7 @@ extension NoteQueryFilter on QueryBuilder<Note, Note, QFilterCondition> {
   QueryBuilder<Note, Note, QAfterFilterCondition> createdAtIsNull() {
     return QueryBuilder.apply(this, (query) {
       return query.addFilterCondition(const FilterCondition.isNull(
-        property: r'createdAt',
+        property: r'created_at',
       ));
     });
   }
@@ -287,7 +287,7 @@ extension NoteQueryFilter on QueryBuilder<Note, Note, QFilterCondition> {
   QueryBuilder<Note, Note, QAfterFilterCondition> createdAtIsNotNull() {
     return QueryBuilder.apply(this, (query) {
       return query.addFilterCondition(const FilterCondition.isNotNull(
-        property: r'createdAt',
+        property: r'created_at',
       ));
     });
   }
@@ -296,7 +296,7 @@ extension NoteQueryFilter on QueryBuilder<Note, Note, QFilterCondition> {
       DateTime? value) {
     return QueryBuilder.apply(this, (query) {
       return query.addFilterCondition(FilterCondition.equalTo(
-        property: r'createdAt',
+        property: r'created_at',
         value: value,
       ));
     });
@@ -309,7 +309,7 @@ extension NoteQueryFilter on QueryBuilder<Note, Note, QFilterCondition> {
     return QueryBuilder.apply(this, (query) {
       return query.addFilterCondition(FilterCondition.greaterThan(
         include: include,
-        property: r'createdAt',
+        property: r'created_at',
         value: value,
       ));
     });
@@ -322,7 +322,7 @@ extension NoteQueryFilter on QueryBuilder<Note, Note, QFilterCondition> {
     return QueryBuilder.apply(this, (query) {
       return query.addFilterCondition(FilterCondition.lessThan(
         include: include,
-        property: r'createdAt',
+        property: r'created_at',
         value: value,
       ));
     });
@@ -336,7 +336,7 @@ extension NoteQueryFilter on QueryBuilder<Note, Note, QFilterCondition> {
   }) {
     return QueryBuilder.apply(this, (query) {
       return query.addFilterCondition(FilterCondition.between(
-        property: r'createdAt',
+        property: r'created_at',
         lower: lower,
         includeLower: includeLower,
         upper: upper,
@@ -707,13 +707,13 @@ extension NoteQuerySortBy on QueryBuilder<Note, Note, QSortBy> {
 
   QueryBuilder<Note, Note, QAfterSortBy> sortByCreatedAt() {
     return QueryBuilder.apply(this, (query) {
-      return query.addSortBy(r'createdAt', Sort.asc);
+      return query.addSortBy(r'created_at', Sort.asc);
     });
   }
 
   QueryBuilder<Note, Note, QAfterSortBy> sortByCreatedAtDesc() {
     return QueryBuilder.apply(this, (query) {
-      return query.addSortBy(r'createdAt', Sort.desc);
+      return query.addSortBy(r'created_at', Sort.desc);
     });
   }
 
@@ -757,13 +757,13 @@ extension NoteQuerySortThenBy on QueryBuilder<Note, Note, QSortThenBy> {
 
   QueryBuilder<Note, Note, QAfterSortBy> thenByCreatedAt() {
     return QueryBuilder.apply(this, (query) {
-      return query.addSortBy(r'createdAt', Sort.asc);
+      return query.addSortBy(r'created_at', Sort.asc);
     });
   }
 
   QueryBuilder<Note, Note, QAfterSortBy> thenByCreatedAtDesc() {
     return QueryBuilder.apply(this, (query) {
-      return query.addSortBy(r'createdAt', Sort.desc);
+      return query.addSortBy(r'created_at', Sort.desc);
     });
   }
 
@@ -813,7 +813,7 @@ extension NoteQueryWhereDistinct on QueryBuilder<Note, Note, QDistinct> {
 
   QueryBuilder<Note, Note, QDistinct> distinctByCreatedAt() {
     return QueryBuilder.apply(this, (query) {
-      return query.addDistinctBy(r'createdAt');
+      return query.addDistinctBy(r'created_at');
     });
   }
 
@@ -847,7 +847,7 @@ extension NoteQueryProperty on QueryBuilder<Note, Note, QQueryProperty> {
 
   QueryBuilder<Note, DateTime?, QQueryOperations> createdAtProperty() {
     return QueryBuilder.apply(this, (query) {
-      return query.addPropertyName(r'createdAt');
+      return query.addPropertyName(r'created_at');
     });
   }
 

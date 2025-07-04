@@ -11,5 +11,6 @@ class Note {
   String? title; // Title of the note
   String? description; // Description of the note
   int? count; // Optional count field for the note
+  @Name("created_at") // Custom name for the field in the database
   DateTime? createdAt; // Timestamp when the note was created
 }
