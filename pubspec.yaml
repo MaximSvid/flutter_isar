@@ -14,6 +14,10 @@ dependencies:
   flutter:
     sdk: flutter
   go_router: ^16.0.0
+  isar: ^3.1.0+1 # Isar database package
+  isar_flutter_libs: ^3.1.0+1 # Enthalt die Binärdateien für Isar
+  path_provider: ^2.1.5 # Zugriff auf den Dateispeicher des Geräts
+  provider: ^6.1.3 # State Management
 
 
   cupertino_icons: ^1.0.8
@@ -21,6 +25,7 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+isar_generator: ^3.1.0+1 # Isar Code-Generator für die Datenbankmodelle
 
 
 flutter:
