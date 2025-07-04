@@ -2,6 +2,9 @@ import 'package:flutter_datenbank_isar/model/note.dart';
 import 'package:isar/isar.dart';
 
 /// A repository for managing notes.
+/// This class provides methods to interact with the Isar database for CRUD operations on notes.
+/// It includes methods to retrieve all notes, add a new note, update an existing note, and delete a note by its ID.
+/// Usage of this repository allows for clean separation of data access logic from the rest of the application, promoting better maintainability and testability.
 class NoteRepository {
   final Isar isar;
 
