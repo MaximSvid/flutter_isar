@@ -25,7 +25,8 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-isar_generator: ^3.1.0+1 # Isar Code-Generator für die Datenbankmodelle
+  build_runner: 2.4.13 # Build Runner für Code-Generierung
+  isar_generator: ^3.1.0+1 # Isar Code-Generator für die Datenbankmodelle
 
 
 flutter:

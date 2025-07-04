@@ -1,5 +1,6 @@
-
 import 'package:isar/isar.dart';
+part 'note.g.dart';
+
 /// This file defines the Note model for the Isar database.
 /// It includes fields for the note's ID, title, description, count, and creation timestamp.
 /// The model is annotated with `@collection` to indicate that it is a collection in the Isar database.
